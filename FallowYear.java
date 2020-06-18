@@ -1,14 +1,12 @@
+// You work on 10 x 10 sized map --> line 5
 import java.util.Scanner;
 public class FallowYear {
 private static  Scanner scan = new Scanner(System.in);
+private static  int[][] firstYear = new int[10][10]; // draws the first year
 public static void main(String[] args) {
-    
-    System.out.println("Wide x Length");
-    int wide = scan.nextInt();
-    int length = scan.nextInt();
     System.out.println("Initial Year: ");
     int year = scan.nextInt();
-    int[][] firstYear = new int[wide][length]; // first year
+    int[][] firstYear = new int[10][10]; // first year
 
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {firstYear[i][j] = 0;}
@@ -59,7 +57,6 @@ public static void main(String[] args) {
         }
         year++;
         if(year == 2020) break;
-        
         }
     }
 }

@@ -1,19 +1,12 @@
 import java.util.Scanner;
-public class FallowYear {
+public class FallowYear { 
 private static  Scanner scan = new Scanner(System.in);
 private static  int[][] firstYear = new int[10][10]; // first year
 public static void main(String[] args) {
     System.out.println("Initial Year: ");
     int year = scan.nextInt();
 
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {firstYear[i][j] = 0;}
-    }
-
-    for (int i = 0; i < 10; i++) {
-        for (int d = 0; d < 10; d++) {System.out.print(firstYear[i][d]+ " ");}
-        System.out.println(" ");
-    }
+    FirstYear();
 
     boolean flag = true;
     while (flag) {
@@ -57,4 +50,14 @@ public static void main(String[] args) {
         
         }
     }
+private static void FirstYear() {
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {firstYear[i][j] = 0;}
+    }
+
+    for (int i = 0; i < 10; i++) {
+        for (int d = 0; d < 10; d++) {System.out.print(firstYear[i][d]+ " ");}
+        System.out.println(" ");
+    }
+}
 }

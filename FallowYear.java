@@ -5,9 +5,10 @@ private static  int[][] firstYear = new int[10][10]; // first year
 public static void main(String[] args) {
     System.out.println("Initial Year: ");
     int year = scan.nextInt();
-
     FirstYear();
-
+    FallowYearCalculation(year);
+    }
+private static void FallowYearCalculation(int year) {
     boolean flag = true;
     while (flag) {
         scan = new Scanner(System.in);
@@ -49,7 +50,7 @@ public static void main(String[] args) {
         year++; if(year == 2020) break;
         
         }
-    }
+}
 private static void FirstYear() {
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {firstYear[i][j] = 0;}

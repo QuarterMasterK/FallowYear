@@ -7,7 +7,6 @@ private static int endy;
 private static  Scanner scan = new Scanner(System.in);
 private static  int[][] firstYear = new int[10][10]; // first year
 public static void main(String[] args) {
-    System.out.println("Hello World");
     System.out.println("Initial Year: ");
     int year = scan.nextInt();
     FirstYear();

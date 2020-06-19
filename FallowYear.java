@@ -20,7 +20,6 @@ private static void FallowYearCalculation(int year) {
         EmptyChecker = scan.hasNextInt();
         if(EmptyChecker) {
             System.out.println(year + 1);
-            int startx, starty, endx, endy;
             startx = scan.nextInt();
             starty = scan.nextInt();
             endx = scan.nextInt();
